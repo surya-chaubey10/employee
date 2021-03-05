@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Hello Baby</h1>
+
+  <button id="add_photo" type="button" class="btn btn-outline-dark" >Add Photo</button>
+  <script type="text/javascript">
+      document.getElementById("add_photo").onclick = function () {
+          location.href = "add_photo.php";
+      };
+  </script>
+  
+
+  <!-- <p>Resize the browser window to see the responsive effect.</p> -->
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+
+  </div>
+
+  <div class="column">
+    <img src="images/surya/IMG_20200607_153953.jpg" alt="" style="width: 100%;">
+  </div>
+
+  <div class="column">
+    <img src="images/surya/IMG_20190626_093404.jpg" alt="" style="width: 100%;">
+  </div>
+
+</div>
+
+</body>
+</html>
