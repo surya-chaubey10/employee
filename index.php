@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $email = $_POST["email"]; 
             $password = $_POST["password"]; 
 
-            if($email === 'suryapratapchaubey10@gmail.com' && $password === 'surya12345'){
+            if($email === 'tannu@gmail.com' && $password === 'suryatannu'){
                 $_SESSION['email'] = $email;
                 header('Location: home.php');
             }else if($email === 'surya007@gmail.com' && $password === 'surya007'){
