@@ -1,16 +1,16 @@
 <?php
 session_start();
 if($_SESSION['email']){
-            // Create connection
-            $conn =new mysqli("localhost", "root", "", "employee");
+            // // Create connection
+            // $conn =new mysqli("localhost", "root", "", "employee");
 
-            //Check connection
-            if ($conn->connect_error){
-                die("Connection failed:" .$conn->connect_error);
-            }
+            // //Check connection
+            // if ($conn->connect_error){
+            //     die("Connection failed:" .$conn->connect_error);
+            // }
 
-            $sql = "SELECT * FROM photo ";
-            $obj = $conn->query($sql);
+            // $sql = "SELECT * FROM photo ";
+            // $obj = $conn->query($sql);
             
 ?>
 
