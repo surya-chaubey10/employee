@@ -1,16 +1,19 @@
 <?php
 session_start();
 if($_SESSION['email']){
-            // Create connection
-            $conn =new mysqli("localhost", "root", "", "employee");
+            // // Create connection
+            // $conn =new mysqli("localhost", "root", "", "employee");
 
-            // //Check connection
-            // if ($conn->connect_error){
-            //     die("Connection failed:" .$conn->connect_error);
-            // }
+            // // //Check connection
+            // // if ($conn->connect_error){
+            // //     die("Connection failed:" .$conn->connect_error);
+            // // }
 
-            $sql = "SELECT * FROM photo ";
-            $obj = $conn->query($sql);
+            // $sql = "SELECT * FROM photo ";
+            // $obj = $conn->query($sql);
+
+            $obj = array("1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg");
+            $arrlen = count($obj);
             
 ?>
 
@@ -58,12 +61,12 @@ if($_SESSION['email']){
         <div class="container container-fluid">
             <div class="row">
                 <?php
-                    while($data = mysqli_fetch_assoc($obj))
+                    for($x = 0; $x < $arrlen; $x++)
                     {
                     ?>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 mt-5 mr-5">
-                    <img style="width:100%;height:300px;border-radius:5%;" src="images/surya/<?php echo $data['pic_name'];?>" alt="">
+                    <img style="width:100%;height:300px;border-radius:5%;" src="images/surya/<?php echo $obj[$x];?>" alt="">
                 </div>
 
                 <?php
